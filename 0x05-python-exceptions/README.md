@@ -1,4 +1,5 @@
 # 0x05-python-exceptions
+contains solution to the project
 
 ## Task 0:  Safe list printing
 Write a function that prints x elements of a list.
