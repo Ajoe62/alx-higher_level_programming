@@ -1,6 +1,5 @@
 #!/usr/bin/node
 
-
 // Import the 'fs' module for file system operations
 const fs = require('fs');
 
@@ -8,13 +7,12 @@ const fs = require('fs');
 const filename = process.argv[2];
 
 // Use 'fs.readFile' to read the file asynchronously
-fs.readFile(filename, 'utf-8', (error, content) => {
-
+fs.readFile(filename, 'utf-8', (err, content) => {
   // If an error occurred, log it to the console
-  if (error) {
-    console.log(error);
- // Otherwise, print the content of the file
+  if (err) {
+    console.log(err);
   } else {
+    // Otherwise, print the content of the file
     console.log(content);
   }
 });
